@@ -108,3 +108,25 @@ variedade = variedades[dia - 1];
  Console.ForegroundColor = ConsoleColor.Blue;
 Console.WriteLine($"\n{tipo} {variedade}");
 Console.ResetColor();
+
+
+kakakakakkakakaka
+
+int conversor = 0;
+
+Console.Write("Digite um número ");
+string digitado = Console.ReadLine()!;
+
+if (!int.TryParse(digitado, out conversor))
+{
+    Console.WriteLine("voce é burro? eu falei pra digitar um número");
+    return;
+}
+
+if (conversor < 0)
+{
+    throw new ArgumentException("n existe mes negativo seu jumento");
+    return;
+}
+
+Console.WriteLine("\nmacaco");
